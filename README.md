@@ -1,26 +1,10 @@
-# Graph Neural Networks — TP3
-
-> MVA Master's Program — Graphs in Machine Learning (2025–2026)  
-> **Author:** Adam Mounir
-
-## Overview
+# Graph Neural Networks
 
 This project explores **Graph Neural Networks (GNNs)** through two main tasks:
 
-1. **Node Classification on PPI Graphs** — Design and train a GNN model that achieves >93% micro F1-score on the Protein-Protein Interaction (PPI) dataset.
-2. **Conv2D as Message Passing** — Implement a standard 2D convolution as a Message Passing Neural Network (MPNN), demonstrating the theoretical connection between CNNs and GNNs.
+1. **Node Classification on PPI Graphs** : Design and train a GNN model that achieves >93% micro F1-score on the Protein-Protein Interaction (PPI) dataset.
+2. **Conv2D as Message Passing** : Implement a standard 2D convolution as a Message Passing Neural Network (MPNN), demonstrating the theoretical connection between CNNs and GNNs.
 
-## Project Structure
-
-```
-├── TP3.ipynb               # Main notebook with all questions, code, and explanations
-├── class_model_gnn.py      # GAT-based model architecture (StudentModel)
-├── model.pth               # Trained model weights
-├── message_passing.py      # Conv2D reimplemented as message passing (3 functions)
-├── raw/                    # Raw PPI dataset files
-├── processed/              # Preprocessed PyTorch Geometric dataset
-└── README.md
-```
 
 ## Part 1 — PPI Node Classification
 
@@ -65,28 +49,4 @@ Each pixel in an image becomes a **node** in a graph. Edges connect each pixel t
 
 Both roundtrip identity (`image → graph → image`) and numerical equivalence with `torch.nn.Conv2d` are validated with assertions.
 
-## Setup
 
-### Requirements
-
-- Python ≥ 3.10
-- PyTorch ≥ 2.0
-- PyTorch Geometric ≥ 2.0
-- scikit-learn, matplotlib, numpy
-
-### Installation
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install torch torchvision torchaudio
-pip install torch-geometric scikit-learn matplotlib numpy
-```
-
-### Running
-
-Open `TP3.ipynb` in Jupyter or VS Code and run all cells sequentially. The trained model weights are already saved in `model.pth`.
-
-## License
-
-Academic project — MVA Master's Program, ENS Paris-Saclay.
