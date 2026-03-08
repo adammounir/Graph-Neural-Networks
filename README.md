@@ -6,7 +6,7 @@ This project explores **Graph Neural Networks (GNNs)** through two main tasks:
 2. **Conv2D as Message Passing** : Implement a standard 2D convolution as a Message Passing Neural Network (MPNN), demonstrating the theoretical connection between CNNs and GNNs.
 
 
-## Part 1 — PPI Node Classification
+## Part 1 : PPI Node Classification
 
 ### Task
 
@@ -29,7 +29,7 @@ The model uses **Graph Attention Networks (GAT)** ([Veličković et al., 2018](h
 | Validation F1 (micro) | **~95.5%** |
 | Target | ≥ 93% |
 
-## Part 2 — Conv2D as Message Passing
+## Part 2 : Conv2D as Message Passing
 
 This section demonstrates that a standard `torch.nn.Conv2d` operation can be exactly replicated using PyTorch Geometric's `MessagePassing` framework.
 
